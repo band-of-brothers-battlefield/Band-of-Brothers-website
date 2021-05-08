@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { hot } from "react-hot-loader";
 import "./../assets/scss/App.scss";
 import { QueryClient, QueryClientProvider } from 'react-query'
-import Main from "./Views"
+import Main from "./Main"
 
 const queryClient = new QueryClient();
 
