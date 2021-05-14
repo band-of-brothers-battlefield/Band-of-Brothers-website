@@ -1,7 +1,7 @@
 import '../locales/config';
 import { Switch, Route, Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import mainBackground from '../assets/img/0.png';
+import mainBackground from '../assets/img/0.jpg';
 import curvedContainer from '../assets/svg/textContainer.svg';
 import discord from '../assets/svg/discord.svg'
 import secondBackground from '../assets/img/718645.jpg'
@@ -73,7 +73,7 @@ const Title = styled.h1`
 
 const DonationBox = styled.div`
     background: #FFC8B7;
-    border-width: 13px 25px;
+    border-width: 18px 25px;
     border-style: solid;
     border-color: #FFC8B7;
     margin-left: -25px;
@@ -85,7 +85,7 @@ const DonationBox = styled.div`
 
 const DonationField = styled.div`
     background: #FFFFFF;
-    border-width: 13px 25px;
+    border-width: 9px 25px;
     border-style: solid;
     border-color: #FFFFFF;
     width: 45%;
@@ -96,7 +96,18 @@ const DonationField = styled.div`
 `
 
 const DonationButton = styled.button`
+    background-color: #ffffff;
+    border: none;
+    font-family: Futura Hv BT;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 142.37%;
+    /* or 26px */
 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 `
 
 const DiscordBox = styled.div`
@@ -142,7 +153,8 @@ function Main() {
                         <p style={{margin: 0}}>Donate 2 or more euro and get VIP</p>
                     </div>
                     <DonationField>
-                        <div><b>2</b> Euro</div>
+                        <div><input type="number" value="2" style={{border: "none"}}/></div>
+                        <span>Euro</span>
                         <DonationButton>Donate </DonationButton>
                     </DonationField>
                 </DonationBox>
